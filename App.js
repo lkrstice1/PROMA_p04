@@ -31,12 +31,7 @@ export default function App() {
 
   return (
     <View style={stilovi.ekran}>
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
+      <View style={stilovi.viewUnos}>
         <TextInput
           placeholder="dodaj cilj"
           style={stilovi.unos}
@@ -76,4 +71,9 @@ const stilovi = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
   },
+  viewUnos: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  }
 });
